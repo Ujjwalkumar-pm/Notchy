@@ -36,7 +36,7 @@ func runPanelSizeChecks() {
     check("floorIsOne.store", n.collapsed == CGSize(width: 1, height: 1))
 
     // roundTripsDefaults: save → load gives the same value; reset → empty.
-    let suite = "notchy-checks-\(UUID().uuidString)"
+    let suite = "notchy-checks-panelsize"
     let ud = UserDefaults(suiteName: suite)!
     let store = PanelSizeStore(defaults: ud)
     check("roundTripsDefaults.emptyFirst", store.load() == PanelSize())
@@ -141,7 +141,7 @@ func runPanelSizeChecks() {
     check("openAuto.fixed", customOpenSize(PanelSize(expanded: CGSize(width: 500, height: 300)), defaultHeight: 180)
             == CGSize(width: 500, height: 300))
     check("openAuto.none", customOpenSize(PanelSize(), defaultHeight: 180) == nil)
-    let autoSuite = "notchy-checks-\(UUID().uuidString)"
+    let autoSuite = "notchy-checks-panelsize-auto"
     let autoUD = UserDefaults(suiteName: autoSuite)!
     let autoStore = PanelSizeStore(defaults: autoUD)
     autoStore.save(autoP)
