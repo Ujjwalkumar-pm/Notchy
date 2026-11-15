@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build Notchy-Launch-Post-Copy.docx (LinkedIn + Instagram copy, alt text, pre-post checklist).
+"""Build Notchy-Launch-Post-Copy.docx (LinkedIn + Instagram copy, image map, alt text, pre-post checklist).
 
 Usage: video/.venv/bin/python video/copy/make-docx.py [out.docx]
 Needs python-docx (installed by video/requirements.txt; see video/README.md).
@@ -73,20 +73,49 @@ Save this for when you install it.
 
 #Notchy #macOS #MacBook #MacApps #AI #OpenSource #DeveloperTools #Productivity #MacTips #IndieDev"""
 
+PANEL = "the top of a drawn MacBook screen, where the real Notchy panel drops out of the notch: a \"Needs approval · Bash\" card for npm test with Deny and Allow once buttons, above the Now Playing controls for \"Golden Hour Drive\" by The Demo Band"
+WELCOME = "the top of a drawn MacBook screen with the notch, and below it the real Notchy welcome window at step 2 of 3, \"Allow what you use\": Calendar is ticked, and Accessibility, Focus and Bluetooth each have an Allow button"
+
 ALT = [
     ("thumbnail-linkedin-1920x1080.png",
-     "Dark launch image for Notchy. On the left, large text reads \"Your notch, finally useful.\" with the line "
-     "\"AI agent approvals, meeting reminders and Teams & Outlook alerts, right at the notch.\", then \"Built by "
-     "Ujjwal Kumar\" and a \"Free & open source\" tag. On the right, the Notchy panel shows a \"Needs approval · Bash\" "
-     "card for npm test with Deny and Allow once buttons, and a meeting reminder for \"Design review\" with a Join button."),
+     "Dark launch image for Notchy. On the left: the Notchy wordmark, large text \"Your notch, finally useful.\", three tags "
+     "(AI agent approvals, Meeting reminders, Teams & Outlook alerts), then \"Built by Ujjwal Kumar\", \"Free & open source · "
+     "macOS 14+\" and " + REPO + ". On the right, " + PANEL + "."),
+    ("thumbnail-linkedin-install-1920x1080.png",
+     "Dark image for the Notchy install video. On the left: the Notchy wordmark, large text \"Set up in 90 seconds.\" and three "
+     "numbered steps: Download from GitHub; Open it, allow what you use; Hover the notch. Then \"Built by Ujjwal Kumar\", "
+     "\"Free & open source · macOS 14+\" and " + REPO + ". On the right, " + WELCOME + "."),
+    ("banner-linkedin-1584x396.png",
+     "Wide dark banner. In the middle: the Notchy wordmark, \"Your notch, finally useful.\", \"Built by Ujjwal Kumar · Free & "
+     "open source · macOS 14+\" and " + REPO + ". On the right, " + PANEL + "."),
+    ("post-linkedin-1200x627.png",
+     "Dark launch image for Notchy. On the left: the Notchy wordmark, \"Your notch, finally useful.\", three tags (AI agent "
+     "approvals, Meeting reminders, Teams & Outlook alerts), \"Built by Ujjwal Kumar\", \"Free & open source · macOS 14+\" "
+     "and " + REPO + ". On the right, " + PANEL + "."),
     ("cover-instagram-reel-1080x1920.png",
-     "Vertical cover for the Notchy launch Reel. The Notchy wordmark sits above the line \"Your notch, finally useful.\" "
-     "Below it, the Notchy panel shows a coding agent's approval card with Deny and Allow once, and a \"Design review\" "
-     "meeting reminder with a Join button. At the bottom: \"Built by Ujjwal Kumar\", " + REPO + " and \"Free & open source\"."),
+     "Vertical cover for the Notchy launch Reel. At the top, " + PANEL + ". Below: the Notchy wordmark, \"Your notch, finally "
+     "useful.\", \"Built by Ujjwal Kumar\", " + REPO + " and \"Free & open source · macOS 14+\"."),
+    ("cover-instagram-reel-install-1080x1920.png",
+     "Vertical cover for the Notchy install Reel. At the top, " + WELCOME + ". Below: the Notchy wordmark, \"Set up in 90 "
+     "seconds.\", \"Built by Ujjwal Kumar\", " + REPO + " and \"Free & open source · macOS 14+\"."),
     ("cover-instagram-feed-1080x1350.png",
-     "Notchy cover. The wordmark and the line \"Your notch, finally useful.\" sit above two real Notchy screens: a "
-     "coding agent's approval card with Deny and Allow once, and a meeting reminder with a Join button. Below them: "
-     "\"Built by Ujjwal Kumar\", " + REPO + " and \"Free & open source\"."),
+     "Notchy feed post. At the top, " + PANEL + ". Below: the Notchy wordmark, \"Your notch, finally useful.\", \"Built by "
+     "Ujjwal Kumar\", " + REPO + " and \"Free & open source · macOS 14+\"."),
+    ("post-instagram-square-1080x1080.png",
+     "Square Notchy announcement. At the top, " + PANEL + ". Below: \"Introducing Notchy\", the line \"AI agent approvals, "
+     "meetings and alerts, at your notch.\", \"Built by Ujjwal Kumar\" and \"Free & open source · macOS 14+ · " + REPO + "\"."),
+]
+
+# Which image goes where: (file, platform and slot, used with)
+WHERE = [
+    ("thumbnail-linkedin-1920x1080.png", "LinkedIn: video thumbnail", "Launch post, Notchy-Launch-16x9.mp4"),
+    ("thumbnail-linkedin-install-1920x1080.png", "LinkedIn: video thumbnail", "Install post, Notchy-Install-16x9.mp4"),
+    ("banner-linkedin-1584x396.png", "LinkedIn: profile background (cover) image", "Your profile, during launch week. The left side stays clear for your photo"),
+    ("post-linkedin-1200x627.png", "LinkedIn: image post, or the link preview image", "Launch post text, if you post without the video"),
+    ("cover-instagram-reel-1080x1920.png", "Instagram: Reel cover", "Launch Reel, Notchy-Launch-9x16.mp4 (key content sits inside the 4:5 grid crop)"),
+    ("cover-instagram-reel-install-1080x1920.png", "Instagram: Reel cover", "Install Reel, Notchy-Install-9x16.mp4"),
+    ("cover-instagram-feed-1080x1350.png", "Instagram: feed post (4:5)", "Launch caption, as a photo post or first slide"),
+    ("post-instagram-square-1080x1080.png", "Instagram: square post, or a Story background", "Short announcement"),
 ]
 
 CHECKLIST = [
@@ -95,8 +124,8 @@ CHECKLIST = [
     "Open " + REPO + " in a private window. Check the link works, the release downloads, and the README install steps match the video.",
     "Do one test install on a clean user account: download the zip in Safari, open it, and confirm Open Anyway appears in Privacy & Security.",
     "Instagram: add the GitHub link to your bio (both captions say \"link in bio\"), or remove those words. Add your Instagram handle to the captions if you want one.",
-    "Instagram: upload cover-instagram-reel-1080x1920.png as the Reel cover and check the grid crop. Use cover-instagram-feed-1080x1350.png for a feed post.",
-    "LinkedIn: upload thumbnail-linkedin-1920x1080.png as the video thumbnail. Paste the alt text from section 5 where the app allows it.",
+    "Instagram: upload cover-instagram-reel-1080x1920.png (launch) and cover-instagram-reel-install-1080x1920.png (install) as the Reel covers and check the grid crop. Use cover-instagram-feed-1080x1350.png or post-instagram-square-1080x1080.png for a feed post.",
+    "LinkedIn: upload thumbnail-linkedin-1920x1080.png (launch) and thumbnail-linkedin-install-1920x1080.png (install) as the video thumbnails, and set banner-linkedin-1584x396.png as your profile background. Paste the alt text from section 6 where the app allows it.",
     "Read each post once more on your phone before posting.",
 ]
 
@@ -146,7 +175,8 @@ def main():
     post(doc, LINKEDIN_LAUNCH)
 
     heading(doc, "2. LinkedIn - install video post (with Notchy-Install-16x9.mp4)")
-    note(doc, f"{words(LINKEDIN_INSTALL)} words without hashtags · post a day or two after the launch post, or as its first comment")
+    note(doc, f"{words(LINKEDIN_INSTALL)} words without hashtags · post a day or two after the launch post, or as its first comment"
+              " · thumbnail: thumbnail-linkedin-install-1920x1080.png")
     post(doc, LINKEDIN_INSTALL)
 
     heading(doc, "3. Instagram - launch Reel caption (Notchy-Launch-9x16.mp4)")
@@ -154,16 +184,30 @@ def main():
     post(doc, IG_LAUNCH)
 
     heading(doc, "4. Instagram - install Reel caption (Notchy-Install-9x16.mp4)")
-    note(doc, "10 hashtags")
+    note(doc, "10 hashtags · cover: cover-instagram-reel-install-1080x1920.png")
     post(doc, IG_INSTALL)
 
-    heading(doc, "5. Alt text for the covers")
+    heading(doc, "5. Which image goes where")
+    note(doc, "All eight images are in Desktop/Notchy-Launch-Kit. A side-by-side view is in review/covers-overview.png.")
+    t = doc.add_table(rows=1, cols=3)
+    t.style = "Light Grid Accent 1"
+    for cell, text in zip(t.rows[0].cells, ("Image", "Where it goes", "Use it with")):
+        cell.text = ""
+        cell.paragraphs[0].add_run(text).bold = True
+    for row in WHERE:
+        cells = t.add_row().cells
+        for cell, text in zip(cells, row):
+            cell.text = text
+            for r in cell.paragraphs[0].runs:
+                r.font.size = Pt(9.5)
+
+    heading(doc, "6. Alt text for the images")
     for name, alt in ALT:
         p = doc.add_paragraph()
         p.add_run(name).bold = True
         doc.add_paragraph(alt)
 
-    heading(doc, "6. Before you post")
+    heading(doc, "7. Before you post")
     for item in CHECKLIST:
         doc.add_paragraph(item, style="List Bullet")
 

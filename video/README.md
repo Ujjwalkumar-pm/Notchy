@@ -32,7 +32,7 @@ Override the interpreter for the shell mixers with `PY=/path/to/python`.
 2. **Music**: `video/.venv/bin/python video/audio/make-music.py` (WAVs are git-ignored; deterministic).
 3. **Launch video**: `video/launch/make-media.sh`, then `video/.venv/bin/python video/launch/vo.py`, then `video/launch/mix.sh` (builds comps, renders, mixes, exports MP4s). `SKIP_RENDER=1` re-mixes only.
 4. **Install video**: `video/install/make-media.sh`, `video/.venv/bin/python video/install/vo.py`, `video/install/mix.sh`.
-5. **Covers**: `video/covers/render.sh`.
+5. **Covers** (8 thumbnails, covers and banners + `review/covers-overview.png`): `video/covers/render.sh`. UI cutouts in `video/covers/media/` are committed; rebuild with `/opt/homebrew/bin/python3.12 video/covers/make-media.py` (needs Pillow and the footage stills).
 6. **Post copy**: `video/.venv/bin/python video/copy/make-docx.py`.
 
 The voice-selection samples (Kokoro / Tara / Sarvam rounds) are not in the repo; they live in `~/Desktop/Notchy-Launch-Kit/review/voice-samples/`.

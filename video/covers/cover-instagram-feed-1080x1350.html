@@ -1,59 +1,20 @@
 <!doctype html>
 <html lang="en"><head><meta charset="UTF-8" />
 <meta name="viewport" content="width=1080, height=1350" />
-<title>Notchy · cover-instagram-feed-1080x1350</title>
-<style>
-/* Notchy launch covers. Same look as the launch video end card (video/launch/comp-16x9).
-   Hero tiles are crops of real Notchy captures with demo data (video/footage/SHOT/still.png, 2x). */
-:root { --accent:#7AA7FF; --ink:#F5F7FA; --muted:#AEB7C7; --ground:#05060A;
-  --font:-apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --mono:"SF Mono", ui-monospace, Menlo, monospace; }
-* { margin:0; padding:0; box-sizing:border-box; }
-html, body { background:var(--ground); overflow:hidden; }
-#root { position:relative; overflow:hidden; background:var(--ground); font-family:var(--font); color:var(--ink);
-  -webkit-font-smoothing:antialiased; }
-.glow { position:absolute; border-radius:50%;
-  background:radial-gradient(closest-side, rgba(122,167,255,0.24), rgba(122,167,255,0) 72%); }
-
-/* wordmark pill, as on the end card */
-.pill { position:absolute; display:flex; align-items:center; justify-content:center; background:#000;
-  border-radius:999px; box-shadow:0 0 0 1.5px rgba(122,167,255,0.5), 0 20px 60px rgba(122,167,255,0.2); }
-.pill span { font-weight:700; letter-spacing:-0.045em; color:var(--ink); }
-.chip { position:absolute; display:inline-flex; align-items:center; gap:12px; border-radius:999px; font-weight:600;
-  color:#D7DEEA; background:rgba(122,167,255,0.12); box-shadow:inset 0 0 0 1.5px rgba(122,167,255,0.45); }
-.chip i { width:12px; height:12px; border-radius:6px; background:var(--accent); box-shadow:0 0 14px rgba(122,167,255,0.9); }
-
-.hook { position:absolute; font-weight:800; letter-spacing:-0.035em; line-height:1.0; }
-.hook em { font-style:normal; color:var(--accent); }
-.sub { position:absolute; font-weight:500; color:#C9D0DC; line-height:1.25; letter-spacing:-0.005em; }
-.by { position:absolute; font-weight:700; letter-spacing:-0.02em; }
-.gh { position:absolute; font-family:var(--mono); font-weight:600; color:var(--accent); letter-spacing:-0.01em; }
-
-/* real-UI tile: a cropped window onto a 1920x1080 capture */
-.tile { position:absolute; overflow:hidden; border-radius:28px;
-  box-shadow:0 40px 120px rgba(0,0,0,0.6), 0 0 0 2px rgba(255,255,255,0.16); }
-.tile img { position:absolute; display:block; width:1920px; height:1080px; transform-origin:0 0; }
-</style>
-<style>
-html, body, #root { width:1080px; height:1350px; }
-.c { left:0; width:1080px; text-align:center; }
-</style></head>
+<title>Notchy · Instagram feed post 4:5</title>
+<link rel="stylesheet" href="covers.css" />
+<style>html, body, #root { width:1080px; height:1350px; }</style>
+</head>
 <body><div id="root">
-  <!-- feed / grid cover 1080x1350 (4:5) -->
-  <div class="glow" style="left:-260px; top:20px; width:1600px; height:1500px;"></div>
-  <div class="pill" style="left:405px; top:70px; width:270px; height:86px;"><span style="font-size:56px;">Notchy</span></div>
-  <div class="hook c" style="top:182px; font-size:104px;">Your notch,<br><em>finally useful.</em></div>
-
-  <!-- real UI: approval card from the notch (approval-card-still frame 76: card settled, label readable, no pointer), crop x556-1364 y0-400 at 1.1x -->
-  <div class="tile" style="left:95px; top:440px; width:889px; height:440px;">
-    <img src="media/approval-card-settled.png" style="left:-611.6px; top:0px; transform:scale(1.1);" alt="" />
+  <div class="glow" style="left:-160px; top:-260px; width:1400px; height:1100px;"></div>
+  <!-- s = 0.84 -->
+  <div class="mac" style="left:70px; top:70px; width:940px; height:700px; --bz:16px; --r:44px; --fade:76%;">
+    <div class="screen"><div class="menubar" style="--mb:51px;"></div>
+      <img class="ui" src="media/panel-approval.png" style="width:630px;" alt="" /></div>
   </div>
-  <!-- real UI: meeting reminder banner (banner-meeting still), crop x600-1320 y50-200 -->
-  <div class="tile" style="left:180px; top:912px; width:720px; height:150px; border-radius:24px;">
-    <img src="media/banner-meeting.png" style="left:-600px; top:-50px;" alt="" />
-  </div>
-
-  <div class="by c" style="top:1118px; font-size:58px;">Built by Ujjwal Kumar</div>
-  <div class="gh c" style="top:1196px; font-size:34px;">github.com/Ujjwalkumar-pm/Notchy</div>
-  <div class="chip" style="left:340px; top:1258px; height:56px; width:400px; justify-content:center; font-size:28px;"><i></i>Free &amp; open source</div>
+  <div class="pill" style="left:412px; top:750px; width:256px; height:84px;"><span style="font-size:52px;">Notchy</span></div>
+  <div class="hook c" style="top:862px; font-size:104px;">Your notch,<br><em>finally useful.</em></div>
+  <div class="by c" style="top:1100px; font-size:46px;">Built by Ujjwal Kumar</div>
+  <div class="gh c" style="top:1166px; font-size:30px;">github.com/Ujjwalkumar-pm/Notchy</div>
+  <div class="meta c" style="top:1214px; font-size:28px;">Free &amp; open source<span class="dot">·</span>macOS 14+</div>
 </div></body></html>
