@@ -1,0 +1,78 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Notchy — using the space beside the notch</title>
+<style>
+:root{--dim:#a1a1a6;--chip:#1c1c1e;--chip2:#2c2c2e;--accent:#7aa7ff;--green:#30d158;--amber:#ff9f0a}
+*{box-sizing:border-box;margin:0}
+body{font:14px/1.4 -apple-system,"SF Pro Text",system-ui;background:#d9d9dc;color:#1b1b1d;padding:36px 44px;width:1560px}
+h1{font:600 26px -apple-system}.sub{color:#48484a;margin:6px 0 24px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.frame{border-radius:16px;height:330px;position:relative;overflow:hidden;background:linear-gradient(160deg,#f6a06b,#e8577a 55%,#b03b8f)}
+.cap{font:600 15px -apple-system;margin:12px 2px 3px}.note{color:#48484a;font-size:13px;margin:0 2px}
+.panel{position:absolute;top:0;left:50%;transform:translateX(-50%);width:440px;background:#000;color:#fff;border-radius:0 0 30px 30px;padding:0 18px 16px;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.top{height:34px;display:flex;align-items:center;justify-content:space-between;position:relative}
+.hw{position:absolute;left:50%;transform:translateX(-50%);top:0;width:170px;height:32px;border-radius:0 0 10px 10px;background:#000;outline:1px dashed rgba(255,255,255,.25)}
+.hwl{position:absolute;left:50%;transform:translateX(-50%);top:9px;font-size:11px;color:#8e8e93}
+.wing{display:flex;gap:6px;align-items:center;width:120px}
+.wing.r{justify-content:flex-end}
+.tab{width:30px;height:24px;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#a1a1a6;font-size:13px}
+.tab.on{background:var(--chip2);color:#fff}
+.st{display:flex;align-items:center;gap:5px;font-size:12px;color:#d1d1d6}
+.dot{width:7px;height:7px;border-radius:50%}
+.badge{background:#ff453a;color:#fff;border-radius:9px;padding:0 6px;font-size:11px;font-weight:700}
+.mtop{display:flex;align-items:center;gap:14px;margin-top:10px}
+.art{width:58px;height:58px;border-radius:12px;background:linear-gradient(135deg,#7dd3fc,#6366f1 60%,#312e81)}
+.t1{font-weight:600;font-size:15px}.t2{color:var(--dim)}
+.prog{display:flex;align-items:center;gap:10px;margin:12px 0 10px;font-size:11px;color:var(--dim)}
+.track{flex:1;height:5px;border-radius:3px;background:#2c2c2e}.track i{display:block;height:5px;width:20%;border-radius:3px;background:#cfd8e3}
+.ctl{display:flex;justify-content:space-between;padding:0 14px;font-size:20px}
+.win{position:absolute;inset:22px 20px 18px;background:#1e1e20;border-radius:14px;display:flex;color:#f2f2f7;border:1px solid #3a3a3c;overflow:hidden}
+.side{width:120px;background:#161618;padding:30px 8px}.side div{padding:6px 10px;border-radius:7px;font-size:13px}.side .on{background:#0a84ff}
+.main{flex:1;padding:18px 18px;font-size:13px}.main h2{font-size:14px;margin-bottom:8px}
+.srow{display:flex;align-items:center;gap:10px;background:#2c2c2e;padding:7px 11px;border-bottom:1px solid #3a3a3c}
+.srow:first-of-type{border-radius:10px 10px 0 0}.srow:last-of-type{border-radius:0 0 10px 10px;border-bottom:none}
+.sl{margin-left:auto;display:flex;align-items:center;gap:8px;color:var(--dim)}.sl b{display:block;width:110px;height:4px;border-radius:2px;background:#48484a;position:relative}.sl b:after{content:"";position:absolute;left:55%;top:-5px;width:14px;height:14px;border-radius:50%;background:#fff}
+.seg{margin-left:auto;display:flex;background:#1c1c1e;border-radius:7px;padding:2px}.seg span{padding:2px 9px;border-radius:5px;font-size:12px;color:var(--dim)}.seg .on{background:#48484a;color:#fff}
+.sw{margin-left:auto;width:32px;height:19px;border-radius:10px;background:#30d158;position:relative}.sw:after{content:"";position:absolute;right:2px;top:2px;width:15px;height:15px;border-radius:50%;background:#fff}
+</style></head><body>
+<h1>Notchy — using the space beside the notch</h1>
+<p class="sub">Dashed box = the camera notch (always hidden). The strip left and right of it was empty; now it holds tabs and live status, and the content moves up · demo data</p>
+<div class="grid">
+
+<div><div class="frame"><div class="panel"><div class="top"><div class="wing"><div class="tab on">♫</div><div class="tab">✳</div><div class="tab">🔔</div><div class="tab">📅</div></div><div class="hw"></div><div class="hwl">notch</div>
+<div class="wing r"><span class="st"><span class="dot" style="background:var(--green)"></span>2</span><span class="st">🔔 <span class="badge">8</span></span><span class="st">10:42</span></div></div>
+<div class="mtop"><div class="art"></div><div><div class="t1">Song Title</div><div class="t2">Artist Name</div></div></div>
+<div class="prog"><span>0:09</span><div class="track"><i></i></div><span>-5:26</span></div>
+<div class="ctl"><span>⤨</span><span>⏮</span><span>⏸</span><span>⏭</span><span>▭</span></div>
+</div></div><p class="cap">A · Tabs left, status right (my pick)</p><p class="note">Left wing: the 4 tabs. Right wing: Claude sessions working (green dot + count), unread alerts badge, next-meeting time. Panel gets ~34 pt shorter.</p></div>
+
+<div><div class="frame" style="background:linear-gradient(160deg,#1e3a8a,#4c6fe0)"><div class="panel"><div class="top"><div class="wing"><div class="tab on">♫</div><div class="tab">✳</div></div><div class="hw"></div><div class="hwl">notch</div>
+<div class="wing r"><div class="tab">🔔</div><div class="tab">📅</div></div></div>
+<div class="mtop"><div class="art"></div><div><div class="t1">Song Title</div><div class="t2">Artist Name</div></div></div>
+<div class="prog"><span>0:09</span><div class="track"><i></i></div><span>-5:26</span></div>
+<div class="ctl"><span>⤨</span><span>⏮</span><span>⏸</span><span>⏭</span><span>▭</span></div>
+</div></div><p class="cap">B · Tabs split around the notch</p><p class="note">Two tabs each side. Symmetric and clean, but no room for status.</p></div>
+
+<div><div class="frame" style="background:linear-gradient(160deg,#9fb4c2,#3c4f58)"><div class="panel"><div class="top"><div class="wing"><span class="st" style="font-weight:600">Music</span></div><div class="hw"></div><div class="hwl">notch</div>
+<div class="wing r"><span class="st">⌂ swipe ‹ ›</span></div></div>
+<div class="mtop"><div class="art"></div><div><div class="t1">Song Title</div><div class="t2">Artist Name</div></div></div>
+<div class="prog"><span>0:09</span><div class="track"><i></i></div><span>-5:26</span></div>
+<div class="ctl"><span>⤨</span><span>⏮</span><span>⏸</span><span>⏭</span><span>▭</span></div>
+<div style="display:flex;justify-content:center;gap:6px;margin-top:10px"><span class="dot" style="background:#fff"></span><span class="dot" style="background:#48484a"></span><span class="dot" style="background:#48484a"></span><span class="dot" style="background:#48484a"></span></div>
+</div></div><p class="cap">C · Swipe mode (optional)</p><p class="note">Tab name left of the notch, page dots below. Two-finger swipe left/right on the trackpad changes tabs. Works with A or B too.</p></div>
+
+<div style="grid-column:span 2"><div class="frame" style="height:390px;background:linear-gradient(160deg,#2a2a40,#3b3b5c)"><div class="win">
+<div class="side"><div>General</div><div class="on">Notch</div><div>Tabs</div><div>Alerts</div><div>Calendar</div><div>Appearance</div></div>
+<div class="main"><h2>Size</h2>
+<div class="srow">Closed width<span class="sl">179 pt <b></b></span></div>
+<div class="srow">Closed height<span class="sl">32 pt <b></b></span></div>
+<div class="srow">Open width<span class="sl">440 pt <b></b></span></div>
+<div class="srow">Open height<span class="sl">Auto <b></b></span></div>
+<h2 style="margin-top:14px">Opening</h2>
+<div class="srow">Open from<span class="seg"><span class="on">Centre</span><span>Left</span><span>Right</span></span></div>
+<div class="srow">Animation<span class="seg"><span class="on">Spring</span><span>Smooth</span><span>Snappy</span><span>Fade</span><span>None</span></span></div>
+<div class="srow">Speed<span class="seg"><span>Slow</span><span class="on">Normal</span><span>Fast</span></span></div>
+<div class="srow">Swipe to change tabs<span class="sw"></span></div>
+<div class="srow">Tab layout<span class="seg"><span class="on">Tabs + status (A)</span><span>Split (B)</span></span></div>
+</div></div></div><p class="cap">Settings → new "Notch" section</p><p class="note">Sizes (with "Reset to notch size"), where it opens from, animation style and speed, swipe on/off, tab layout.</p></div>
+
+</div></body></html>

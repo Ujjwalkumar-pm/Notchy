@@ -1,0 +1,25 @@
+.build/
+*.app
+.DS_Store
+.build-capture/
+# Launch-video footage frames and stills (> 50 MB; regenerate with
+# scripts/capture-build.sh && python3 video/capture/capture.py). Contact sheets + manifest are committed.
+video/footage/*/frame-*.png
+video/footage/*/still.png
+
+# Music beds (regenerate: /tmp/kokoro-venv/bin/python video/audio/make-music.py); install WAV is >25 MB
+video/audio/*.wav
+
+# Launch-video build intermediates (rebuild: video/launch/make-media.sh, video/launch/mix.sh)
+video/launch/media/
+video/launch/renders/
+video/launch/comp-*/.hyperframes/
+
+# Install-video build intermediates (rebuild: video/install/make-media.sh, video/install/mix.sh)
+video/install/media/
+video/install/renders/
+video/install/comp-*/.hyperframes/
+video/*/__pycache__/
+
+# Video tooling venv (create: see video/README.md)
+video/.venv/

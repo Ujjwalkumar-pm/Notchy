@@ -1,0 +1,197 @@
+{
+ "L0": {
+  "duration": 2.953,
+  "sentences": [
+   {
+    "text": "That notch on your Mac?",
+    "start": 0.0,
+    "end": 1.323
+   },
+   {
+    "text": "It's been doing nothing.",
+    "start": 1.673,
+    "end": 2.953
+   }
+  ]
+ },
+ "L1": {
+  "duration": 2.291,
+  "sentences": [
+   {
+    "text": "Until now.",
+    "start": 0.0,
+    "end": 0.896
+   },
+   {
+    "text": "Meet Notchy.",
+    "start": 1.246,
+    "end": 2.291
+   }
+  ]
+ },
+ "L2": {
+  "duration": 12.741,
+  "sentences": [
+   {
+    "text": "Your AI coding agent needs permission while you're in another app?",
+    "start": 0.0,
+    "end": 3.733
+   },
+   {
+    "text": "The request slides right out of the notch.",
+    "start": 4.083,
+    "end": 6.217
+   },
+   {
+    "text": "Rest your pointer on it, tap Allow once, and keep going.",
+    "start": 6.567,
+    "end": 9.511
+   },
+   {
+    "text": "And when a long task finishes, Notchy lets you know.",
+    "start": 9.861,
+    "end": 12.741
+   }
+  ]
+ },
+ "L3": {
+  "duration": 8.124,
+  "sentences": [
+   {
+    "text": "Running late again?",
+    "start": 0.0,
+    "end": 1.088
+   },
+   {
+    "text": "A minute before your call, a reminder pops out with a Join button.",
+    "start": 1.438,
+    "end": 5.15
+   },
+   {
+    "text": "And the Calendar tab counts down to the next one.",
+    "start": 5.5,
+    "end": 8.124
+   }
+  ]
+ },
+ "L4": {
+  "duration": 9.319,
+  "sentences": [
+   {
+    "text": "Teams and Outlook won't stop pinging?",
+    "start": 0.0,
+    "end": 1.899
+   },
+   {
+    "text": "Your messages and unread counts wait in the Alerts tab.",
+    "start": 2.249,
+    "end": 5.47
+   },
+   {
+    "text": "And banners stay quiet during calls, Focus, and full screen.",
+    "start": 5.82,
+    "end": 9.319
+   }
+  ]
+ },
+ "L5": {
+  "duration": 5.811,
+  "sentences": [
+   {
+    "text": "Your music lives up here too.",
+    "start": 0.0,
+    "end": 1.643
+   },
+   {
+    "text": "Artwork, controls, drag to seek, shuffle, and where the sound goes.",
+    "start": 1.993,
+    "end": 5.811
+   }
+  ]
+ },
+ "L6": {
+  "duration": 4.702,
+  "sentences": [
+   {
+    "text": "Volume and brightness get a slim little pop-up.",
+    "start": 0.0,
+    "end": 2.795
+   },
+   {
+    "text": "No more big gray box.",
+    "start": 3.145,
+    "end": 4.702
+   }
+  ]
+ },
+ "L7": {
+  "duration": 5.969,
+  "sentences": [
+   {
+    "text": "Your AirPods battery.",
+    "start": 0.0,
+    "end": 1.429
+   },
+   {
+    "text": "Your charger.",
+    "start": 1.779,
+    "end": 2.718
+   },
+   {
+    "text": "A USB drive you can eject right from the notch.",
+    "start": 3.068,
+    "end": 5.969
+   }
+  ]
+ },
+ "L8": {
+  "duration": 6.622,
+  "sentences": [
+   {
+    "text": "And it's yours to shape.",
+    "start": 0.0,
+    "end": 1.365
+   },
+   {
+    "text": "Reorder and swipe tabs, go Black or Glass, and pick where it opens and how it moves.",
+    "start": 1.715,
+    "end": 6.622
+   }
+  ]
+ },
+ "L8v": {
+  "duration": 3.209,
+  "sentences": [
+   {
+    "text": "Make it yours.",
+    "start": 0.0,
+    "end": 1.003
+   },
+   {
+    "text": "Tabs, themes, animations.",
+    "start": 1.353,
+    "end": 3.209
+   }
+  ]
+ },
+ "L9": {
+  "duration": 5.052,
+  "sentences": [
+   {
+    "text": "It's free and open source.",
+    "start": 0.0,
+    "end": 1.536
+   },
+   {
+    "text": "Built by Oojwal Kumar.",
+    "start": 1.886,
+    "end": 3.443
+   },
+   {
+    "text": "Grab it on GitHub.",
+    "start": 3.793,
+    "end": 5.052
+   }
+  ]
+ }
+}

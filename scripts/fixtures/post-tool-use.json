@@ -1,0 +1,1 @@
+{"session_id":"fx-demo","cwd":"/Users/example/Projects/demo-app","hook_event_name":"PostToolUse","tool_name":"Bash","tool_input":{"command":"npm run build && vercel --prod"}}

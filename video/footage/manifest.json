@@ -1,0 +1,588 @@
+{
+  "about": "Notchy launch-video footage: the real app UI (capture build, demo data only) composited over a generated wallpaper with a drawn menu bar and camera notch. 2x scale. notch preset = 960x540 pt around the notch; desk preset = 1280x720 pt. Beats: L = video/script/launch.md, I = video/script/install.md.",
+  "shots": [
+    {
+      "name": "closed-notch",
+      "preset": "notch",
+      "beats": [
+        "L0",
+        "I0",
+        "L9"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frames": 91,
+      "duration": 3.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "hover-open-music",
+      "preset": "notch",
+      "beats": [
+        "L1"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frames": 151,
+      "duration": 5.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "music-playing-loop",
+      "preset": "notch",
+      "beats": [
+        "L1",
+        "L9",
+        "I9"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frames": 151,
+      "duration": 5.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "approval-dwell-allow",
+      "preset": "notch",
+      "beats": [
+        "L2"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "still_frame": 126,
+      "frames": 286,
+      "duration": 9.53,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "approval-card-still",
+      "preset": "notch",
+      "beats": [
+        "L2"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frames": 76,
+      "duration": 2.53,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "banner-claude-finished",
+      "preset": "notch",
+      "beats": [
+        "L2"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "still_frame": 76,
+      "frames": 151,
+      "duration": 5.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "claude-sessions",
+      "preset": "notch",
+      "beats": [
+        "L2"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frames": 91,
+      "duration": 3.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "banner-meeting",
+      "preset": "notch",
+      "beats": [
+        "L3"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "still_frame": 76,
+      "frames": 151,
+      "duration": 5.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "calendar-hero",
+      "preset": "notch",
+      "beats": [
+        "L3"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frames": 151,
+      "duration": 5.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "banner-teams",
+      "preset": "notch",
+      "beats": [
+        "L4"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "still_frame": 76,
+      "frames": 151,
+      "duration": 5.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "banner-outlook",
+      "preset": "notch",
+      "beats": [
+        "L4"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "still_frame": 76,
+      "frames": 151,
+      "duration": 5.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "alerts-scroll",
+      "preset": "notch",
+      "beats": [
+        "L4"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frames": 241,
+      "duration": 8.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "alerts-focus-moon",
+      "preset": "notch",
+      "beats": [
+        "L4"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frames": 76,
+      "duration": 2.53,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "music-seek-shuffle",
+      "preset": "notch",
+      "beats": [
+        "L5"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frames": 271,
+      "duration": 9.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "volume-popup",
+      "preset": "notch",
+      "beats": [
+        "L6"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "still_frame": 42,
+      "frames": 121,
+      "duration": 4.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "brightness-popup",
+      "preset": "notch",
+      "beats": [
+        "L6"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "still_frame": 42,
+      "frames": 121,
+      "duration": 4.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "banner-airpods",
+      "preset": "notch",
+      "beats": [
+        "L7"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "still_frame": 76,
+      "frames": 151,
+      "duration": 5.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "banner-charger",
+      "preset": "notch",
+      "beats": [
+        "L7"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "still_frame": 76,
+      "frames": 151,
+      "duration": 5.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "banner-drive-eject",
+      "preset": "notch",
+      "beats": [
+        "L7"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "still_frame": 64,
+      "frames": 256,
+      "duration": 8.53,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "swipe-tabs",
+      "preset": "notch",
+      "beats": [
+        "L8"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frames": 211,
+      "duration": 7.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "black-music-still",
+      "preset": "notch",
+      "beats": [
+        "L8"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frames": 46,
+      "duration": 1.53,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "glass-music",
+      "preset": "notch",
+      "beats": [
+        "L8"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frames": 0,
+      "duration": 0,
+      "still": "still.png",
+      "notes": "Real screen grab of the Glass panel over the capture backdrop (Glass only renders on screen)."
+    },
+    {
+      "name": "glass-alerts",
+      "preset": "notch",
+      "beats": [
+        "L8"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frames": 0,
+      "duration": 0,
+      "still": "still.png",
+      "notes": "Real screen grab of the Glass panel over the capture backdrop (Glass only renders on screen)."
+    },
+    {
+      "name": "glass-calendar",
+      "preset": "notch",
+      "beats": [
+        "L8"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "frames": 0,
+      "duration": 0,
+      "still": "still.png",
+      "notes": "Real screen grab of the Glass panel over the capture backdrop (Glass only renders on screen)."
+    },
+    {
+      "name": "context-menu",
+      "preset": "notch",
+      "beats": [
+        "I7",
+        "I8"
+      ],
+      "fps": 30,
+      "width": 1920,
+      "height": 1080,
+      "still_frame": 60,
+      "frames": 121,
+      "duration": 4.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "settings-general",
+      "preset": "desk",
+      "beats": [
+        "I6",
+        "I8"
+      ],
+      "fps": 30,
+      "width": 2560,
+      "height": 1440,
+      "frames": 76,
+      "duration": 2.53,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "settings-notch",
+      "preset": "desk",
+      "beats": [
+        "L8",
+        "I7"
+      ],
+      "fps": 30,
+      "width": 2560,
+      "height": 1440,
+      "frames": 76,
+      "duration": 2.53,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "settings-tabs",
+      "preset": "desk",
+      "beats": [
+        "L8",
+        "I7"
+      ],
+      "fps": 30,
+      "width": 2560,
+      "height": 1440,
+      "frames": 76,
+      "duration": 2.53,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "settings-alerts",
+      "preset": "desk",
+      "beats": [
+        "I7"
+      ],
+      "fps": 30,
+      "width": 2560,
+      "height": 1440,
+      "frames": 76,
+      "duration": 2.53,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "settings-calendar",
+      "preset": "desk",
+      "beats": [
+        "I7"
+      ],
+      "fps": 30,
+      "width": 2560,
+      "height": 1440,
+      "frames": 76,
+      "duration": 2.53,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "settings-appearance",
+      "preset": "desk",
+      "beats": [
+        "L8",
+        "I7"
+      ],
+      "fps": 30,
+      "width": 2560,
+      "height": 1440,
+      "frames": 77,
+      "duration": 2.57,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "settings-about",
+      "preset": "desk",
+      "beats": [
+        "I7"
+      ],
+      "fps": 30,
+      "width": 2560,
+      "height": 1440,
+      "frames": 76,
+      "duration": 2.53,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "settings-sidebar-pan",
+      "preset": "desk",
+      "beats": [
+        "I7"
+      ],
+      "fps": 30,
+      "width": 2560,
+      "height": 1440,
+      "frames": 226,
+      "duration": 7.53,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "settings-theme-glass",
+      "preset": "desk",
+      "beats": [
+        "L8"
+      ],
+      "fps": 30,
+      "width": 2560,
+      "height": 1440,
+      "frames": 151,
+      "duration": 5.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "settings-open-from",
+      "preset": "desk",
+      "beats": [
+        "L8"
+      ],
+      "fps": 30,
+      "width": 2560,
+      "height": 1440,
+      "frames": 181,
+      "duration": 6.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "settings-turnoff-sheet",
+      "preset": "desk",
+      "beats": [
+        "I8"
+      ],
+      "fps": 30,
+      "width": 2560,
+      "height": 1440,
+      "still_frame": 76,
+      "frames": 151,
+      "duration": 5.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "welcome-1-hover",
+      "preset": "desk",
+      "beats": [
+        "I4"
+      ],
+      "fps": 30,
+      "width": 2560,
+      "height": 1440,
+      "frames": 181,
+      "duration": 6.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "welcome-2-permissions",
+      "preset": "desk",
+      "beats": [
+        "I4"
+      ],
+      "fps": 30,
+      "width": 2560,
+      "height": 1440,
+      "frames": 181,
+      "duration": 6.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "welcome-3-tabs",
+      "preset": "desk",
+      "beats": [
+        "I5"
+      ],
+      "fps": 30,
+      "width": 2560,
+      "height": 1440,
+      "still_frame": 98,
+      "frames": 196,
+      "duration": 6.53,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    },
+    {
+      "name": "welcome-steps",
+      "preset": "desk",
+      "beats": [
+        "I4",
+        "I5"
+      ],
+      "fps": 30,
+      "width": 2560,
+      "height": 1440,
+      "frames": 271,
+      "duration": 9.03,
+      "still": "still.png",
+      "pattern": "frame-%05d.png"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+ "I0": {
+  "duration": 4.105,
+  "sentences": [
+   {
+    "text": "Let's get Notchy installed.",
+    "start": 0.0,
+    "end": 1.621
+   },
+   {
+    "text": "You'll need macOS 14 or later.",
+    "start": 1.971,
+    "end": 4.105
+   }
+  ]
+ },
+ "I1": {
+  "duration": 4.864,
+  "sentences": [
+   {
+    "text": "Head to the Notchy page on GitHub, open Releases, and download the zip file.",
+    "start": 0.0,
+    "end": 4.864
+   }
+  ]
+ },
+ "I2": {
+  "duration": 5.065,
+  "sentences": [
+   {
+    "text": "Double-click the zip to unzip it.",
+    "start": 0.0,
+    "end": 1.771
+   },
+   {
+    "text": "Then drag Notchy into your Applications folder.",
+    "start": 2.121,
+    "end": 5.065
+   }
+  ]
+ },
+ "I3": {
+  "duration": 9.639,
+  "sentences": [
+   {
+    "text": "The first time you open it, macOS says it can't verify Notchy.",
+    "start": 0.0,
+    "end": 3.797
+   },
+   {
+    "text": "That's expected.",
+    "start": 4.147,
+    "end": 5.235
+   },
+   {
+    "text": "Go to System Settings, Privacy and Security, and click Open Anyway.",
+    "start": 5.585,
+    "end": 9.639
+   }
+  ]
+ },
+ "I4": {
+  "duration": 12.643,
+  "sentences": [
+   {
+    "text": "Next, a quick welcome.",
+    "start": 0.0,
+    "end": 1.387
+   },
+   {
+    "text": "Step one: hover the notch to open it.",
+    "start": 1.737,
+    "end": 3.955
+   },
+   {
+    "text": "Step two: allow only what you use.",
+    "start": 4.305,
+    "end": 6.417
+   },
+   {
+    "text": "Each Allow button opens the right spot in System Settings.",
+    "start": 6.767,
+    "end": 10.01
+   },
+   {
+    "text": "Skip one, and that feature just stays off.",
+    "start": 10.36,
+    "end": 12.643
+   }
+  ]
+ },
+ "I5": {
+  "duration": 5.031,
+  "sentences": [
+   {
+    "text": "Step three: pick your tabs.",
+    "start": 0.0,
+    "end": 1.6
+   },
+   {
+    "text": "Want a menu bar icon?",
+    "start": 1.95,
+    "end": 3.614
+   },
+   {
+    "text": "Switch it on here.",
+    "start": 3.964,
+    "end": 5.031
+   }
+  ]
+ },
+ "I6": {
+  "duration": 8.039,
+  "sentences": [
+   {
+    "text": "Notchy hooks into your AI coding agent for you.",
+    "start": 0.0,
+    "end": 2.731
+   },
+   {
+    "text": "It backs up your old settings file first.",
+    "start": 3.081,
+    "end": 5.15
+   },
+   {
+    "text": "You can turn it off in Settings, under General.",
+    "start": 5.5,
+    "end": 8.039
+   }
+  ]
+ },
+ "I7": {
+  "duration": 8.883,
+  "sentences": [
+   {
+    "text": "To open Settings, right-click the notch and choose Settings.",
+    "start": 0.0,
+    "end": 3.2
+   },
+   {
+    "text": "You can also use the menu bar icon, or just open Notchy again from Applications.",
+    "start": 3.55,
+    "end": 8.883
+   }
+  ]
+ },
+ "I8": {
+  "duration": 7.902,
+  "sentences": [
+   {
+    "text": "Want to remove it?",
+    "start": 0.0,
+    "end": 1.109
+   },
+   {
+    "text": "Turn off the coding agent integration in Settings, quit from the notch menu, and drag Notchy to the Trash.",
+    "start": 1.459,
+    "end": 7.902
+   }
+  ]
+ },
+ "I9": {
+  "duration": 2.313,
+  "sentences": [
+   {
+    "text": "That's it.",
+    "start": 0.0,
+    "end": 0.875
+   },
+   {
+    "text": "Enjoy Notchy.",
+    "start": 1.225,
+    "end": 2.313
+   }
+  ]
+ }
+}

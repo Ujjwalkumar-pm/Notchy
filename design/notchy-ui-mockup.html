@@ -1,0 +1,129 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Notchy — UI mockup</title>
+<style>
+  :root{--bg:#0b0b0c;--line:rgba(255,255,255,.08);--txt:#f2f2f2;--dim:#9a9aa0;--green:#3ddc84;--amber:#ffb340;--red:#ff5f57;}
+  *{box-sizing:border-box;margin:0}
+  body{font:13px/1.35 -apple-system,"SF Pro Text",system-ui;background:#e4e6ea;color:#1b1b1d;padding:40px 48px;width:1400px}
+  h1{font:600 26px -apple-system;letter-spacing:-.02em}
+  .sub{color:#4f4f55;margin:6px 0 30px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  .frame{background:linear-gradient(180deg,#2c3a5c,#40507a);border-radius:14px;height:300px;position:relative;overflow:hidden}
+  .frame.tall{height:420px}
+  .menubar{position:absolute;top:0;left:0;right:0;height:32px;background:rgba(255,255,255,.12);display:flex;align-items:center;justify-content:space-between;padding:0 16px;color:#fff;font-size:12px}
+  .cap{font:600 13px -apple-system;margin:10px 2px 2px}
+  .note{color:#4f4f55;font-size:12px;margin:0 2px}
+  /* notch geometry: 190x32 */
+  .notch{position:absolute;top:0;left:50%;transform:translateX(-50%);background:#000;color:var(--txt);
+         border-radius:0 0 12px 12px;overflow:hidden}
+  .pill{width:190px;height:32px;display:flex;align-items:center;justify-content:space-between;padding:0 12px}
+  .dot{width:8px;height:8px;border-radius:50%}
+  .g{background:var(--green)}
+  .a{background:var(--amber)}
+  .count{font:600 11px -apple-system;color:var(--dim)}
+  .ghost{position:absolute;top:0;left:50%;transform:translateX(-50%);width:190px;height:32px;border:1.5px dashed rgba(255,255,255,.55);border-top:none;border-radius:0 0 12px 12px;pointer-events:none}
+  .exp{width:440px;border-radius:0 0 22px 22px;padding:40px 16px 14px}
+  .row{display:flex;align-items:center;gap:10px;padding:8px 6px;border-top:1px solid var(--line)}
+  .row:first-of-type{border-top:none}
+  .row .name{font-weight:600;flex:1}
+  .row .st{color:var(--dim);font-size:12px}
+  .tool{font:11px ui-monospace,Menlo;background:#1c1c1f;padding:2px 6px;border-radius:5px;color:#cfcfd4}
+  .card{background:#161618;border:1px solid rgba(255,179,64,.35);border-radius:14px;padding:12px;margin-bottom:10px}
+  .card .hd{display:flex;align-items:center;gap:8px;font-size:12px;color:var(--amber);font-weight:600}
+  .card .proj{color:var(--txt);margin-left:auto;font-weight:600}
+  .cmd{font:12px ui-monospace,Menlo;background:#000;border-radius:8px;padding:9px 10px;margin:9px 0 10px;color:#e8e8ea;white-space:pre-wrap}
+  .btns{display:flex;gap:8px}
+  .btn{flex:1;text-align:center;padding:8px;border-radius:9px;font-weight:600}
+  .deny{background:#2a2a2d;color:#ff8a84}
+  .allow{background:var(--green);color:#04210f}
+  .more{font-size:11px;color:var(--dim);text-align:right;margin-top:6px}
+  .hnd{position:absolute;background:rgba(61,220,132,.9);border-radius:3px}
+  .menu{position:absolute;background:rgba(40,40,44,.96);color:#eee;border-radius:9px;padding:5px;width:210px;font-size:13px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+  .menu div{padding:4px 10px;border-radius:5px}
+  .menu .hl{background:#3a6df0}
+  .menu hr{border:none;border-top:1px solid rgba(255,255,255,.12);margin:4px 0}
+  .arr{position:absolute;color:#fff;font:600 12px -apple-system;opacity:.9}
+</style></head><body>
+<h1>Notchy — UI mockup</h1>
+<p class="sub">Stage 1 · MacBook Air M4 notch · black panel that sits exactly in the notch, grows only when needed</p>
+
+<div class="grid">
+  <div>
+    <div class="frame">
+      <div class="menubar"><span> Finder</span><span>Thu 13 Nov 5:42 PM</span></div>
+      <div class="notch pill"><span></span><span></span></div>
+      <div class="ghost"></div>
+    </div>
+    <p class="cap">1 · Idle: invisible</p>
+    <p class="note">Exactly the notch's size (dashed line = notch edge). Nothing sticks out.</p>
+  </div>
+
+  <div>
+    <div class="frame">
+      <div class="menubar"><span> Terminal</span><span>Thu 13 Nov 5:42 PM</span></div>
+      <div class="notch pill"><span class="dot g"></span><span class="count">2</span></div>
+    </div>
+    <p class="cap">2 · Claude working</p>
+    <p class="note">Green pulsing dot on the left; session count on the right. Still notch-sized.</p>
+  </div>
+
+  <div>
+    <div class="frame tall">
+      <div class="menubar"><span> Terminal</span><span>Thu 13 Nov 5:42 PM</span></div>
+      <div class="notch exp">
+        <div class="card">
+          <div class="hd"><span class="dot a"></span>Needs approval · Bash<span class="proj">web-app</span></div>
+          <div class="cmd">npm run build &amp;&amp; vercel --prod</div>
+          <div class="btns"><div class="btn deny">Deny</div><div class="btn allow">Allow once</div></div>
+          <div class="more">+1 more waiting</div>
+        </div>
+        <div class="row"><span class="dot g"></span><span class="name">api-server</span><span class="tool">Edit</span><span class="st">working</span></div>
+      </div>
+    </div>
+    <p class="cap">3 · Approval request (opens by itself + Glass chime)</p>
+    <p class="note">Project + exact command. Buttons switch on after 0.5 s to stop accidental clicks. Allow is once only.</p>
+  </div>
+
+  <div>
+    <div class="frame tall">
+      <div class="menubar"><span> Claude</span><span>Thu 13 Nov 5:42 PM</span></div>
+      <div class="notch exp">
+        <div class="row"><span class="dot g"></span><span class="name">Notchy</span><span class="tool">Bash</span><span class="st">working</span></div>
+        <div class="row"><span class="dot a"></span><span class="name">api-server</span><span class="st" style="color:var(--amber)">waiting for you</span></div>
+        <div class="row"><span class="dot" style="background:#666"></span><span class="name">notes</span><span class="st">done ✓</span></div>
+      </div>
+    </div>
+    <p class="cap">4 · Hover: all sessions</p>
+    <p class="note">One row per Claude session: project name, what it's doing. Collapses when the mouse leaves.</p>
+  </div>
+
+  <div>
+    <div class="frame">
+      <div class="menubar"><span> Finder</span><span>Thu 13 Nov 5:42 PM</span></div>
+      <div class="notch pill" style="width:340px;height:46px"><span class="dot g"></span><span class="count">2</span></div>
+      <div class="hnd" style="top:8px;left:calc(50% - 176px);width:4px;height:30px"></div>
+      <div class="hnd" style="top:8px;left:calc(50% + 172px);width:4px;height:30px"></div>
+      <div class="hnd" style="top:50px;left:calc(50% - 30px);width:60px;height:4px"></div>
+      <span class="arr" style="top:16px;left:calc(50% - 215px)">⟷ width</span>
+      <span class="arr" style="top:60px;left:calc(50% - 22px)">↕ height</span>
+    </div>
+    <p class="cap">5 · Resize: any width, any height</p>
+    <p class="note">Drag the left/right edge (stays centred) or the bottom edge. No limit. Size is remembered.</p>
+  </div>
+
+  <div>
+    <div class="frame">
+      <div class="menubar"><span> Finder</span><span>Thu 13 Nov 5:42 PM</span></div>
+      <div class="notch pill"><span class="dot g"></span><span class="count">2</span></div>
+      <div class="menu" style="top:40px;left:calc(50% - 20px)">
+        <div>✓ Start at login</div>
+        <div class="hl">Set size…</div>
+        <div>Reset to notch size</div>
+        <hr><div>Remove Claude hooks</div>
+        <hr><div>Quit Notchy</div>
+      </div>
+    </div>
+    <p class="cap">6 · Right-click menu</p>
+    <p class="note">Starts at login by default: no clicks after you switch the Mac on. Quits cleanly at shutdown.</p>
+  </div>
+</div>
+</body></html>
